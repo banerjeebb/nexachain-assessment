@@ -36,8 +36,6 @@ const UserSchema = new mongoose.Schema({
   accountStatus:    { type: String, enum: ['active', 'inactive', 'suspended'], default: 'active' },
 }, { timestamps: true });
 
-UserSchema.index({ email: 1 });
-UserSchema.index({ referralCode: 1 });
 UserSchema.index({ referredBy: 1 });
 
 /**

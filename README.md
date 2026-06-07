@@ -47,9 +47,8 @@ Make sure the server is running before using the client — all data fetching ha
 ## Environment Variables
 
 > The full list of required environment variables for both the server and the
-> client (with descriptions and example values) is documented in the team's
-> Notion workspace — refer there for the up-to-date values before running
-> `cp .env.example .env`.
+> client  is documented in the
+> Notion link — refer there for the up-to-date values.
 
 ## Generated Code Documentation
 
