@@ -7,10 +7,28 @@
       "Bash(git init *)",
       "Bash(git add *)",
       "Bash(git rm *)",
-      "Bash(rm -rf /home/bishwayan/Personal_Projects/nexachain-assessment/client/.git && echo \"removed\" && find /home/bishwayan/Personal_Projects/nexachain-assessment/client -maxdepth 1 -iname \".git\")"
+      "Bash(rm -rf /home/bishwayan/Personal_Projects/nexachain-assessment/client/.git && echo \"removed\" && find /home/bishwayan/Personal_Projects/nexachain-assessment/client -maxdepth 1 -iname \".git\")",
+      "Bash(grep -iE \"node_modules|\\\\.next/|/docs/|\\\\.env$|\\\\.env\\\\.local$\")",
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(mkdir -p /home/bishwayan/Personal_Projects/nexachain-assessment/server/api)",
+      "Bash(npx vercel *)",
+      "Bash(grep -v '^$')",
+      "Bash(curl -s https://server-delta-cyan-45.vercel.app/api/auth/me -H \"Authorization: Bearer invalid\")",
+      "Bash(curl -s -X POST https://server-delta-cyan-45.vercel.app/api/auth/register -H \"Content-Type: application/json\" -d '{\"fullName\":\"Test Deploy\",\"email\":\"deploytest_xyz123@example.com\",\"mobile\":\"9876543210\",\"password\":\"TestPass1234\"}')",
+      "Bash(curl -s -o /dev/null -w \"client status: %{http_code}\\\\n\" https://client-beta-blond-86.vercel.app)",
+      "Bash(curl -s -X POST https://server-delta-cyan-45.vercel.app/api/auth/register -H \"Content-Type: application/json\" -d '{\"fullName\":\"Test Deploy\",\"email\":\"deploytest_xyz999@example.com\",\"mobile\":\"9876543210\",\"password\":\"TestPass1234\"}')",
+      "Bash(curl -s -o /dev/null -w \"client home: %{http_code}\\\\n\" https://client-beta-blond-86.vercel.app)",
+      "Bash(curl -s -X POST https://server-delta-cyan-45.vercel.app/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"deploytest_xyz999@example.com\",\"password\":\"TestPass1234\"}' -o /dev/null -w \"login: %{http_code}\\\\n\")",
+      "Bash(node -e ' *)",
+      "Bash(curl -s http://localhost:3001)",
+      "Bash(pkill -f \"next dev -p 3001\")"
     ],
     "additionalDirectories": [
-      "/home/bishwayan/Personal_Projects/nexachain-assessment/client/.git"
+      "/home/bishwayan/Personal_Projects/nexachain-assessment/client/.git",
+      "/home/bishwayan/Personal_Projects/nexachain-assessment/server"
     ]
   }
 }

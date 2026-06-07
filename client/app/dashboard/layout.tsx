@@ -7,7 +7,6 @@ import { UserProvider } from '@/components/dashboard/UserContext'
 import Sidebar from '@/components/dashboard/Sidebar'
 import Topbar from '@/components/dashboard/Topbar'
 import BottomNav from '@/components/dashboard/BottomNav'
-import PullToRefresh from '@/components/dashboard/PullToRefresh'
 
 function Shell({ children }: { children: React.ReactNode }) {
   const { collapsed } = useSidebar()
@@ -26,7 +25,9 @@ function Shell({ children }: { children: React.ReactNode }) {
         transition: 'margin-left 0.25s ease',
       }}>
         <Topbar />
-        <PullToRefresh>{children}</PullToRefresh>
+        <div className="dash-main" style={{ flex: 1, padding: '28px', overflowY: 'auto' }}>
+          {children}
+        </div>
       </div>
       <BottomNav />
     </div>

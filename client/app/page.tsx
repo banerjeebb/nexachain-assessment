@@ -86,7 +86,7 @@ const PLANS = [
 // ─── Nav ──────────────────────────────────────────────────────────────────────
 
 function Nav() {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   const links = ['Features', 'Referral Levels', 'Plans']
   return (
     <nav
@@ -184,7 +184,7 @@ function Nav() {
             background: 'rgba(var(--bg-rgb),0.97)',
             backdropFilter: 'blur(20px)',
             borderBottom: '1px solid rgba(var(--veil-rgb),0.08)',
-            display: 'flex', flexDirection: 'column', gap: 4, padding: 16,
+            flexDirection: 'column', gap: 4, padding: 16,
           }}
         >
           {links.map((l) => (
