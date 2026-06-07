@@ -46,24 +46,10 @@ Make sure the server is running before using the client — all data fetching ha
 
 ## Environment Variables
 
-### Server (`server/.env`)
-
-| Variable | Description | Example |
-|---|---|---|
-| `PORT` | Port the Express server listens on | `5000` |
-| `NODE_ENV` | Environment mode | `development` |
-| `CLIENT_URL` | Origin allowed by CORS (the Next.js dev URL) | `http://localhost:3000` |
-| `MONGODB_URI` | MongoDB connection string | `mongodb://localhost:27017/nexachain` |
-| `JWT_SECRET` | Secret used to sign JWTs (min. 32 chars, random) | `replace_with_long_random_string` |
-| `JWT_EXPIRES_IN` | JWT expiry duration | `7d` |
-
-### Client (`client/.env.local`)
-
-| Variable | Description | Example |
-|---|---|---|
-| `NEXT_PUBLIC_API_BASE_URL` | Base URL of the Express API | `http://localhost:5000` |
-
-> Client-side env vars must be prefixed `NEXT_PUBLIC_` to be embedded in the browser bundle by the Next.js compiler.
+> The full list of required environment variables for both the server and the
+> client (with descriptions and example values) is documented in the team's
+> Notion workspace — refer there for the up-to-date values before running
+> `cp .env.example .env`.
 
 ## Generated Code Documentation
 

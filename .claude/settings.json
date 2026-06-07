@@ -24,7 +24,14 @@
       "Bash(curl -s -X POST https://server-delta-cyan-45.vercel.app/api/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"deploytest_xyz999@example.com\",\"password\":\"TestPass1234\"}' -o /dev/null -w \"login: %{http_code}\\\\n\")",
       "Bash(node -e ' *)",
       "Bash(curl -s http://localhost:3001)",
-      "Bash(pkill -f \"next dev -p 3001\")"
+      "Bash(pkill -f \"next dev -p 3001\")",
+      "Bash(curl -s -o /dev/null -w \"home: %{http_code}\\\\n\" http://localhost:3002)",
+      "Bash(curl -s http://localhost:3002)",
+      "Bash(curl -s -o /dev/null -w \"home: %{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(pkill -f \"next dev -p 3002\")",
+      "Bash(curl -s https://client-beta-blond-86.vercel.app)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://client-beta-blond-86.vercel.app)"
     ],
     "additionalDirectories": [
       "/home/bishwayan/Personal_Projects/nexachain-assessment/client/.git",
