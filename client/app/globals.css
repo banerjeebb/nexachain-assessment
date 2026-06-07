@@ -381,6 +381,11 @@ a { color: inherit; text-decoration: none; }
     text-align: left;
     padding: 18px !important;
     min-height: 92px;
+    background: rgba(var(--surface-rgb),0.92);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
   }
   .trust-item-value { font-size: 22px !important; }
   .trust-item-spark { display: none !important; }

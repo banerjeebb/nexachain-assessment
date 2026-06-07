@@ -337,7 +337,7 @@ function TrustBar() {
         }}
       >
         {TRUST_STATS.map((s) => (
-          <div key={s.label} className="trust-item panel" style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+          <div key={s.label} className="trust-item" style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             <div>
               <p
                 className="trust-item-value"
