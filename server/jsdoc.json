@@ -1,0 +1,15 @@
+{
+  "source": {
+    "include": ["controllers", "jobs", "models", "services", "middleware", "config", "routes", "app.js"],
+    "includePattern": ".+\\.js$",
+    "excludePattern": "(^|\\/|\\\\)node_modules(\\/|\\\\|$)"
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
+}

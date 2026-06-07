@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx jsdoc *)",
+      "Bash(grep -c \"^\\\\.git$\")",
+      "Bash(git config *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(rm -rf /home/bishwayan/Personal_Projects/nexachain-assessment/client/.git && echo \"removed\" && find /home/bishwayan/Personal_Projects/nexachain-assessment/client -maxdepth 1 -iname \".git\")"
+    ],
+    "additionalDirectories": [
+      "/home/bishwayan/Personal_Projects/nexachain-assessment/client/.git"
+    ]
+  }
+}
